@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="TestSuite" thread-count="1" parallel="tests">
+    <!--    <test verbose="2" preserve-order="true" name="C:/Users/Bayu_AP871/public-health-dashboard/automation-test/src/test/java/Runner"><classes/>-->
+    <!--    </test>-->
+
+    <test name="ChromeTest">
+
+        <parameter name="browser" value="chrome" />
+
+        <classes>
+
+            <class name="Runner.Runner">
+
+            </class>
+
+        </classes>
+
+    </test>
+
+    <test name="FirefoxTest">
+
+        <parameter name="browser" value="firefox" />
+
+        <classes>
+
+            <class name="Runner.Runner">
+
+            </class>
+
+        </classes>
+
+    </test>
+</suite>
